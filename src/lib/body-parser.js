@@ -11,20 +11,16 @@ bodyParser.parseAsync = (request) => {
     logger.log(logger.INFO, `Original URL: ${request.url}`);
     request.url = url.parse(request.url);
     request.url.query = queryString.parse(request.url.query);
-
-    console.log(request.url);
-    console.log(request.url.query);
-
     if (request.method !== 'POST' && request.method !== 'PUT') {
       return resolve(request);
     }
-    let completeBody = '';
+    let completedBody = '';
     request.on('data', (buffer) => {
-      completeBody += buffer.toString();
+      completedBody += buffer.toString();
     });
     request.on('end', () => {
       try {
-        request.body = JSON.parse(completeBody);
+        request.body = JSON.parse(completedBody);
         return resolve(request);
       } catch (error) {
         return reject(error);
