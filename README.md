@@ -26,7 +26,7 @@ This application stores information about Red Pandas. It takes in a Name and a s
 - superagent
 - dotenv
 
-To POST/CREATE - :/api/redPandas title=[titeGoesHere] content=[contentGoesHere] 
+To POST/CREATE - :/api/redPandas title=[descriptionGoesHere] description=[descriptionGoesHere] 
 
 - If successful, will respond with a 200 status. If an invalid post is made, will respond with a 400 status
 
