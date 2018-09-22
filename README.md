@@ -1,4 +1,5 @@
-# Lab 08 Vanilla Rest API
+# Lab 08 Restful API
+# Build Status: [![Build Status](https://travis-ci.com/peffles/08-Restful-API.svg?branch=master)](https://travis-ci.com/peffles/08-Restful-API)
 **Author**: Wyatt Pefley
 **Version**: 1.0.0
 ___
