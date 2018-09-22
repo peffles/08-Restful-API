@@ -1,9 +1,8 @@
-
 'use strict';
 
 const uuid = require('uuid/v1');
 
-class Note {
+class RedPanda {
   constructor(name, description) {
     this.id = uuid();
     this.timestamp = new Date();
@@ -13,4 +12,4 @@ class Note {
   }
 }
 
-module.exports = Note;
+module.exports = RedPanda;
